@@ -1,5 +1,6 @@
 import { endAdventure, haveAdventures } from '../..';
 import { askQuestion, clear, print } from '../ui/console';
+import { goForWalk } from '../chapter_7/chapter_7_walk';
 
 const WAKE_UP_YES : "Yes" = "Yes" ;
 // ⚠️ This is a very unusual type setup. It's not a great idea in the real world
@@ -37,10 +38,12 @@ export function wakeUp(): void {
 			'✅ CONGRATULATIONS! You successfully made it through Wonderland! 🥳'
 		);
 
+		goForWalk()
+		/*
 		return askQuestion(
 			'Press ENTER to re-enter Wonderland! ',
 			haveAdventures
-		);
+		);*/
 	} else {
 		print('You are unable to wake up! 😱');
 		return endAdventure();
