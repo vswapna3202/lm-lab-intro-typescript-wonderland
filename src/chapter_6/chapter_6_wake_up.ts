@@ -1,6 +1,7 @@
 import { endAdventure, haveAdventures } from '../..';
 import { askQuestion, clear, print } from '../ui/console';
 
+const WAKE_UP_YES : "Yes" = "Yes" ;
 // ⚠️ This is a very unusual type setup. It's not a great idea in the real world
 // to nest so many properties with the exact same name.
 // But in Wonderland, this sort of thing is normal,
@@ -48,5 +49,13 @@ export function wakeUp(): void {
 
 function tryToWakeUp(): WakeUp {
 	// 👉 FIXME ❌
-	return {};
+	return {
+		wake : {
+			wake: {
+				wake: {
+					canWake: WAKE_UP_YES,
+				},
+			},
+		},
+	};
 }
