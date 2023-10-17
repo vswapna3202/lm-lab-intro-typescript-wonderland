@@ -1,8 +1,9 @@
-import { endAdventure, haveAdventures } from '../..';
-import { askQuestion, clear, print } from '../ui/console';
+import { clear, print } from '../ui/console';
+import { endAdventure } from '../..';
 import { goForWalk } from '../chapter_7/chapter_7_walk';
 
-const WAKE_UP_YES : "Yes" = "Yes" ;
+
+const WAKE_UP_YES  = "Yes" as const ;
 // ⚠️ This is a very unusual type setup. It's not a great idea in the real world
 // to nest so many properties with the exact same name.
 // But in Wonderland, this sort of thing is normal,
@@ -39,11 +40,6 @@ export function wakeUp(): void {
 		);
 
 		goForWalk()
-		/*
-		return askQuestion(
-			'Press ENTER to re-enter Wonderland! ',
-			haveAdventures
-		);*/
 	} else {
 		print('You are unable to wake up! 😱');
 		return endAdventure();

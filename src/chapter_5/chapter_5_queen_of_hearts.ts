@@ -23,7 +23,7 @@ export function meetTheQueen(): void {
 
 	let guilty: boolean = false;
 
-	let witnesses: Witness[] = getWitnesses(WITNESS_NAMES.slice()); // 👉 FIXME ❌ - call getWitnesses here
+	const witnesses: Witness[] = getWitnesses(WITNESS_NAMES.slice()); // 👉 FIXME ❌ - call getWitnesses here
 
 	if (!witnesses || witnesses.length === 0) {
 		print(`No witnesses have come forward to defend you.`);

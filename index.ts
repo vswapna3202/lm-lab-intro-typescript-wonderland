@@ -25,11 +25,11 @@ function startAdventure(name: string): void {
 		return endAdventure();
 	}
 }
-
+/*
 function failImmediately() {
 	clear(false);
 	return endAdventure();
-}
+}*/
 
 //const numberBiggerThanThree: any = '11'; // 👉 FIXME ❌
 const numberBiggerThanThree: number = 11;

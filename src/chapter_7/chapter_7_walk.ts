@@ -1,5 +1,5 @@
 import { endAdventure, haveAdventures } from '../..';
-import { askQuestion, clear, print } from '../ui/console';
+import { askQuestion, print } from '../ui/console';
 
 const GARDEN_PLANTS = 
     ['Tulips🌷','Dahlias🌸','Roses🌹','Water Lilies🌺','Hydrangeas🌼', 
